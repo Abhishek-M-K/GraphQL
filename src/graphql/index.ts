@@ -6,7 +6,7 @@ export default async function createApolloServer(){
     const graphqlServer = new ApolloServer({
         typeDefs: `
             type Query {
-                hello:String
+                ${User.queries}
             }
             type Mutation {
                 ${User.mutations}
